@@ -40,7 +40,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6 flex justify-center">
+      <div className="container mx-auto px-4 md:px-6 flex justify-center">
         <div className="w-full max-w-xl space-y-4">
           <div className="space-y-2 text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Contact Me</h2>
