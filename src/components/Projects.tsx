@@ -19,7 +19,7 @@ const projects = [
   {
     title: 'Wood Knot Detection App',
     description: 'Built an on-device real-time detection app for identifying wood knots using YOLOv8 to TFLite conversion and model optimization. Implemented an image-preprocessing pipeline and bounding-box rendering with confidence scores.',
-    image: 'https://picsum.photos/600/400',
+    image: 'https://i.ibb.co/tw9ntCnW/fd56b489-d02d-4fa3-b3d7-24963ae7812d-1.png',
     imageHint: 'wood detection',
     tags: ['Flutter', 'Dart', 'TensorFlow Lite', 'YOLOv8'],
     github: null,
