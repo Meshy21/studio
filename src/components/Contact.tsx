@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, MapPin, Phone, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, FileText } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Contact() {
@@ -34,6 +34,12 @@ export default function Contact() {
             <div className="flex items-center justify-center gap-4">
               <Phone className="h-6 w-6 text-accent" />
               <span className="font-medium">+63 995 480 6524</span>
+            </div>
+            <div className="flex items-center justify-center gap-4">
+              <FileText className="h-6 w-6 text-accent" />
+              <Link href="https://drive.google.com/file/d/1T3ZLckN9Y5X4B3OH9NnW5XwPFQl-BjGm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">
+                Meshary's CV
+              </Link>
             </div>
           </div>
         </div>
