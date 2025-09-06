@@ -27,7 +27,7 @@ const projects = [
   {
     title: 'Capstone: Braille Haptic Reader',
     description: "Developed an OCR-to-Braille translation pipeline on Raspberry Pi. Trained a YOLOv5-based AI model for accurate text detection, achieving 97.82% OCR accuracy and enabling real-time translation for visually impaired users.",
-    image: 'https://picsum.photos/600/400',
+    image: 'https://i.ibb.co/3mYZWPgY/image-2025-09-06-230239249.png',
     imageHint: 'braille reader device',
     tags: ['Python', 'Raspberry Pi', 'YOLOv5', 'OCR', 'AI'],
     github: null,
