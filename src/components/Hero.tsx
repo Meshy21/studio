@@ -24,7 +24,7 @@ export default function Hero() {
                 Computer Engineer | Mobile Developer | Embedded Systems Enthusiast
               </p>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                A recent graduate from Western Mindanao State University with a B.S. in Computer Engineering and a focus in Networking. Despite my specialization, I'm a flexible and passionate developer with hands-on experience in creating dynamic mobile applications and robust embedded systems. I thrive on solving complex problems and bringing ideas to life through code.
+                Computer Engineering graduate with internship experience in IT support and academic projects in software and AI systems. Proficient in Python, JavaScript, PHP, Dart/Flutter, and SQL, with experience in REST APIs, database-driven apps, and cross-platform development. Skilled in Git/GitHub, cloud tools (AWS, Firebase), and unit testing, with a strong foundation in OOP, algorithms, and software quality practices.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
