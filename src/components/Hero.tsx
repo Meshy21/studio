@@ -9,9 +9,9 @@ export default function Hero() {
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <Image
             alt="Meshary A. Aquino"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-contain sm:w-full lg:order-last"
             height="600"
-            src="https://picsum.photos/600/600"
+            src="https://i.ibb.co/VYzG1wcW/IMG-0307.jpg"
             width="600"
             data-ai-hint="professional portrait"
           />
