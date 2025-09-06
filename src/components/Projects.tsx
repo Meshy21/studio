@@ -7,6 +7,16 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
+    title: 'LearnMate (Mobile-Based Android App)',
+    description:
+      'Learnmate is an Android-based mobile application designed to streamline remote learning and tutoring. It enables tutors and tutees to connect, communicate, and collaborate through an intuitive interface that supports session booking, in-app messaging, and video conferencing — all from a mobile device.',
+    image: 'https://picsum.photos/600/400',
+    imageHint: 'mobile learning',
+    tags: ['Android', 'Java', 'Firebase'],
+    github: null,
+    live: null,
+  },
+  {
     title: 'Wood Knot Detection App',
     description: 'Built an on-device real-time detection app for identifying wood knots using YOLOv8 to TFLite conversion and model optimization. Implemented an image-preprocessing pipeline and bounding-box rendering with confidence scores.',
     image: 'https://picsum.photos/600/400',
