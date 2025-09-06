@@ -12,7 +12,7 @@ const projects = [
     image: 'https://picsum.photos/600/400',
     imageHint: 'wood detection',
     tags: ['Flutter', 'Dart', 'TensorFlow Lite', 'YOLOv8'],
-    github: 'https://github.com',
+    github: null,
     live: null,
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     image: 'https://picsum.photos/600/400',
     imageHint: 'electrical monitoring',
     tags: ['Arduino', 'C/C++', 'C#', '.NET', 'CSV'],
-    github: 'https://github.com',
+    github: null,
     live: null,
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     image: 'https://picsum.photos/600/400',
     imageHint: 'braille reader device',
     tags: ['Python', 'Raspberry Pi', 'YOLOv5', 'OCR', 'AI'],
-    github: 'https://github.com',
+    github: null,
     live: null,
   },
 ];
