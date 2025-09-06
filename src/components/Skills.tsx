@@ -1,13 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CodeXml, Smartphone, Cpu, Network, Database, Webhook } from 'lucide-react';
+import { CodeXml, Smartphone, Cpu, BrainCircuit, Database, GitBranch, Server } from 'lucide-react';
 
 const skills = [
-  { name: 'Web Development', icon: <CodeXml className="h-10 w-10 text-accent" />, description: 'React, Next.js, Node.js, TypeScript' },
-  { name: 'Mobile Development', icon: <Smartphone className="h-10 w-10 text-accent" />, description: 'Flutter, Dart, Firebase' },
-  { name: 'Embedded Systems', icon: <Cpu className="h-10 w-10 text-accent" />, description: 'C++, ESP32, Arduino, IoT' },
-  { name: 'Networking', icon: <Network className="h-10 w-10 text-accent" />, description: 'TCP/IP, Sockets, MQTT' },
-  { name: 'Databases', icon: <Database className="h-10 w-10 text-accent" />, description: 'SQL, NoSQL, Firebase Realtime DB' },
-  { name: 'APIs & Services', icon: <Webhook className="h-10 w-10 text-accent" />, description: 'REST APIs, CI/CD, Genkit' },
+  { name: 'Programming Languages', icon: <CodeXml className="h-10 w-10 text-accent" />, description: 'Python, C/C++, C#/.NET, Dart' },
+  { name: 'Mobile Development', icon: <Smartphone className="h-10 w-10 text-accent" />, description: 'Flutter, Dart, Android Native (basics)' },
+  { name: 'AI & Machine Learning', icon: <BrainCircuit className="h-10 w-10 text-accent" />, description: 'TensorFlow Lite, YOLOv5, YOLOv8' },
+  { name: 'Embedded Systems', icon: <Cpu className="h-10 w-10 text-accent" />, description: 'Arduino, Raspberry Pi, ESP32, IoT' },
+  { name: 'Databases', icon: <Database className="h-10 w-10 text-accent" />, description: 'SQL (MySQL, MS SQL, SQLite)' },
+  { name: 'DevOps & Tools', icon: <GitBranch className="h-10 w-10 text-accent" />, description: 'Git/GitHub, AWS (basics), Firebase' },
+  { name: 'System Administration', icon: <Server className="h-10 w-10 text-accent" />, description: 'Windows & Linux Administration' },
 ];
 
 export default function Skills() {
@@ -22,7 +23,7 @@ export default function Skills() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 lg:grid-cols-3 md:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (
             <Card key={skill.name} className="flex flex-col text-center">
               <CardHeader className="flex flex-col items-center gap-4 pb-4">
