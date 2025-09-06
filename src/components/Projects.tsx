@@ -10,9 +10,9 @@ const projects = [
     title: 'LearnMate (Mobile-Based Android App)',
     description:
       'Learnmate is an Android-based mobile application designed to streamline remote learning and tutoring. It enables tutors and tutees to connect, communicate, and collaborate through an intuitive interface that supports session booking, in-app messaging, and video conferencing — all from a mobile device.',
-    image: 'https://picsum.photos/600/400',
+    image: 'https://i.ibb.co/pB0sL53q/9da9f7d7-4f51-44e4-b003-c95f647bd3c1-1.jpg',
     imageHint: 'mobile learning',
-    tags: ['Android', 'Java', 'Firebase'],
+    tags: ['Dart', 'Flutter', 'Flutterflow', 'Agora'],
     github: null,
     live: null,
   },
