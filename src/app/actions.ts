@@ -24,8 +24,8 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   }
 
   // In a real application, you would integrate an email service here.
-  // For this example, we'll simulate a successful submission.
-  console.log('New contact form submission:');
+  // For this example, we'll simulate a successful submission to your email.
+  console.log('New contact form submission for meshary.aquino21@gmail.com:');
   console.log(validatedFields.data);
 
   return {

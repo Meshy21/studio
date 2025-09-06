@@ -19,7 +19,7 @@ export default function Header() {
         <div className="container flex h-14 items-center px-4 md:px-6">
           <div className="mr-6 flex items-center space-x-2">
             <Link href="/" className="font-headline font-bold sm:inline-block">
-              Meshary's Magnum Opus
+              Portfolio
             </Link>
           </div>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -46,7 +46,7 @@ export default function Header() {
                   <div className="flex flex-col space-y-4 pt-6">
                     <SheetClose asChild>
                         <Link href="/" className="mb-4">
-                            <span className="font-headline font-bold text-lg">Meshary's Magnum Opus</span>
+                            <span className="font-headline font-bold text-lg">Portfolio</span>
                         </Link>
                     </SheetClose>
                     {navLinks.map((link) => (

@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: "Meshary's Magnum Opus",
+  title: "Portfolio",
   description:
     'Portfolio of Meshary A. Aquino, a Computer Engineer specializing in web, mobile, and embedded systems.',
 };
