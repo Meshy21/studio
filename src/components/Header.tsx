@@ -1,11 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
-import { Bot, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
-import AiReviewPanel from './AiReviewPanel';
 
 const navLinks = [
   { name: 'Projects', href: '#projects' },
@@ -14,7 +12,6 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [isAiPanelOpen, setIsAiPanelOpen] = useState(false);
 
   return (
     <>
@@ -37,10 +34,6 @@ export default function Header() {
             ))}
           </nav>
           <div className="flex flex-1 items-center justify-end space-x-4">
-            <Button onClick={() => setIsAiPanelOpen(true)} variant="outline" size="sm">
-              <Bot className="mr-2 h-4 w-4" />
-              AI Review
-            </Button>
             <div className="md:hidden">
               <Sheet>
                 <SheetTrigger asChild>
@@ -73,7 +66,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <AiReviewPanel open={isAiPanelOpen} onOpenChange={setIsAiPanelOpen} />
     </>
   );
 }
