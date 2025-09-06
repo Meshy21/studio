@@ -28,7 +28,7 @@ const projects = [
   {
     title: 'Electrical Monitoring System',
     description: 'Designed and assembled a low-cost energy/illumination monitoring system. Wrote Arduino firmware to store sensor readings to SD for later analysis. Built a C# app to ingest and visualize time-series data.',
-    image: 'https://picsum.photos/600/400',
+    image: 'https://i.ibb.co/QFCZfdC1/2c2a6709-4da4-4894-89ca-0e6044f0735d.jpg',
     imageHint: 'electrical monitoring',
     tags: ['Arduino', 'C/C++', 'C#', '.NET', 'CSV'],
     github: null,
