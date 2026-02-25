@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import images from '@/app/lib/placeholder-images.json';
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
             alt="Meshary A. Aquino"
             className="mx-auto aspect-square overflow-hidden rounded-xl object-contain sm:w-full lg:order-last"
             height="600"
-            src="https://i.ibb.co/VYzG1wcW/IMG-0307.jpg"
+            src={images.heroProfile}
             width="600"
             data-ai-hint="professional portrait"
           />
