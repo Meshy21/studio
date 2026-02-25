@@ -1,10 +1,23 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { projects } from '@/lib/projects';
 
+const categories = ['All', 'Mobile App', 'AI', 'IoT'];
+
 export default function Projects() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const filteredProjects =
+    selectedCategory === 'All'
+      ? projects
+      : projects.filter((project) => project.tags.includes(selectedCategory));
+
   return (
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
@@ -16,10 +29,23 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3 mt-12">
-          {projects.map((project) => (
+
+        <div className="flex justify-center flex-wrap gap-4 my-12">
+          {categories.map((category) => (
+            <Button
+              key={category}
+              variant={selectedCategory === category ? 'default' : 'outline'}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </Button>
+          ))}
+        </div>
+
+        <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3">
+          {filteredProjects.map((project) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} className="group block h-full">
-              <Card className="flex flex-col h-full group-hover:border-accent transition-colors">
+              <Card className="flex flex-col h-full group-hover:border-accent group-hover:shadow-lg transform group-hover:-translate-y-1 transition-all duration-300">
                 <CardHeader>
                   <Image
                     src={project.image}
