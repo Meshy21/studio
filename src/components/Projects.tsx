@@ -52,7 +52,7 @@ export default function Projects() {
                     alt={project.title}
                     width={600}
                     height={400}
-                    className="mb-4 rounded-lg object-cover aspect-[3/2]"
+                    className="mb-4 rounded-lg object-contain aspect-[3/2] bg-muted/50"
                     data-ai-hint={project.imageHint}
                   />
                   <CardTitle className="font-headline">{project.title}</CardTitle>

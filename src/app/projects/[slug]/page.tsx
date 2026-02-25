@@ -52,7 +52,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             alt={project.title}
             width={1200}
             height={675}
-            className="mb-8 rounded-lg object-cover w-full aspect-video"
+            className="mb-8 rounded-lg object-contain w-full aspect-video bg-muted/50"
             data-ai-hint={project.imageHint}
           />
           
