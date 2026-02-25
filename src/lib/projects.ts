@@ -74,7 +74,7 @@ export const projects: Project[] = [
     description: "An OCR-to-Braille translation pipeline on Raspberry Pi using YOLOv5 for visually impaired users.",
     longDescription: "As my capstone project, I developed an OCR-to-Braille translation pipeline running on a Raspberry Pi. The system uses a camera to capture text, which is then processed by a custom-trained YOLOv5-based AI model for accurate text detection. The detected text is run through an OCR engine and translated into Braille, which is then outputted to a haptic display. The system achieved a 97.82% OCR accuracy, enabling real-time translation for visually impaired users.",
     challenges: 'Training a highly accurate text detection model for various fonts and lighting conditions was a significant challenge. Integrating the entire pipeline—camera capture, AI inference, OCR, and haptic output—on a resource-constrained device like the Raspberry Pi required extensive optimization. The real-time constraint meant every part of the process had to be as efficient as possible.',
-    learnings: 'I\'ve updated the `src/lib/projects.ts` file to include categories in the tags for each project. This will allow the new filtering functionality to work correctly.',
+    learnings: 'This project taught me a great deal about the practical application of machine learning models on edge devices. I learned about optimizing deep learning models for performance, working with hardware interfaces, and building a complete, end-to-end system that serves a real-world purpose.',
     image: 'https://i.ibb.co/3mYZWPgY/image-2025-09-06-230239249.png',
     imageHint: 'braille reader device',
     gallery: [
@@ -84,5 +84,22 @@ export const projects: Project[] = [
     tags: ['AI', 'IoT', 'Python', 'Raspberry Pi', 'YOLOv5', 'OCR'],
     github: null,
     live: null,
+  },
+  {
+    slug: 'new-sample-project',
+    title: 'New Sample Project',
+    description: 'This is a placeholder for your new project. You can edit this in src/lib/projects.ts.',
+    longDescription: 'This is a longer description for your new sample project. Describe what your project does, its purpose, and the technologies you used. You can edit this text in `src/lib/projects.ts`.',
+    challenges: 'Describe the challenges you faced while building this project. What problems did you solve? Edit this in `src/lib/projects.ts`.',
+    learnings: 'What are the key things you learned from this project? Mention new skills, technologies, or concepts. Edit this in `src/lib/projects.ts`.',
+    image: 'https://picsum.photos/seed/sampleproject/600/400',
+    imageHint: 'placeholder project',
+    gallery: [
+      { url: 'https://picsum.photos/seed/samplegallery1/800/600', hint: 'gallery placeholder' },
+      { url: 'https://picsum.photos/seed/samplegallery2/800/600', hint: 'another placeholder' },
+    ],
+    tags: ['Web App'],
+    github: '#',
+    live: '#',
   },
 ];
