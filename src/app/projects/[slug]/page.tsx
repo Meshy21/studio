@@ -1,3 +1,5 @@
+'use client';
+
 import { projects, Project } from '@/lib/projects';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -5,6 +7,11 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 interface ProjectPageProps {
   params: {
@@ -78,15 +85,29 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               <h2 className="font-headline text-3xl font-bold tracking-tighter mb-4">Gallery</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {project.gallery.map((item, index) => (
-                  <Image
-                    key={index}
-                    src={item.url}
-                    alt={`${project.title} gallery image ${index + 1}`}
-                    width={800}
-                    height={600}
-                    className="rounded-lg object-cover aspect-[4/3]"
-                    data-ai-hint={item.hint}
-                  />
+                  <Dialog key={index}>
+                    <DialogTrigger asChild>
+                      <div className="overflow-hidden rounded-lg cursor-pointer">
+                        <Image
+                          src={item.url}
+                          alt={`${project.title} gallery image ${index + 1}`}
+                          width={800}
+                          height={600}
+                          className="rounded-lg object-cover aspect-[4/3] transition-transform duration-300 hover:scale-110"
+                          data-ai-hint={item.hint}
+                        />
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-4xl p-0 bg-transparent border-0">
+                      <Image
+                        src={item.url}
+                        alt={`${project.title} gallery image ${index + 1}`}
+                        width={1200}
+                        height={900}
+                        className="rounded-lg object-contain w-full h-auto"
+                      />
+                    </DialogContent>
+                  </Dialog>
                 ))}
               </div>
             </div>
