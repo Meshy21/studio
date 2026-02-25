@@ -99,6 +99,12 @@ export const projects: Project[] = [
     gallery: [
       { url: images.inventorySystemGallery1, hint: 'dashboard screen' },
       { url: images.inventorySystemGallery2, hint: 'asset list' },
+      { url: (images as any).inventorySystemGallery3, hint: 'accountability form' },
+      { url: (images as any).inventorySystemGallery4, hint: 'user management' },
+      { url: (images as any).inventorySystemGallery5, hint: 'item details' },
+      { url: (images as any).inventorySystemGallery6, hint: 'search functionality' },
+      { url: (images as any).inventorySystemGallery7, hint: 'reports generation' },
+      { url: (images as any).inventorySystemGallery8, hint: 'login page' },
     ],
     tags: ['Web App', 'PHP', 'SQL'],
     github: null,
