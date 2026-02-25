@@ -2,13 +2,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CodeXml, Smartphone, Cpu, BrainCircuit, Database, GitBranch, Server } from 'lucide-react';
 
 const skills = [
-  { name: 'Programming Languages', icon: <CodeXml className="h-10 w-10 text-accent" />, description: 'Python, C/C++, C#/.NET, Dart' },
+  { name: 'Programming Languages', icon: <CodeXml className="h-10 w-10 text-accent" />, description: 'JavaScript, TypeScript, PHP, Python, C/C++, C#/.NET, Dart' },
   { name: 'Mobile Development', icon: <Smartphone className="h-10 w-10 text-accent" />, description: 'Flutter, Dart, Android Native (basics)' },
   { name: 'AI & Machine Learning', icon: <BrainCircuit className="h-10 w-10 text-accent" />, description: 'TensorFlow Lite, YOLOv5, YOLOv8' },
   { name: 'Embedded Systems', icon: <Cpu className="h-10 w-10 text-accent" />, description: 'Arduino, Raspberry Pi, ESP32, IoT' },
-  { name: 'Databases', icon: <Database className="h-10 w-10 text-accent" />, description: 'SQL (MySQL, MS SQL, SQLite)' },
+  { name: 'Databases', icon: <Database className="h-10 w-10 text-accent" />, description: 'Supabase, PostgreSQL, SQL' },
   { name: 'DevOps & Tools', icon: <GitBranch className="h-10 w-10 text-accent" />, description: 'Git/GitHub, AWS (basics), Firebase' },
-  { name: 'System Administration', icon: <Server className="h-10 w-10 text-accent" />, description: 'Windows & Linux Administration' },
+  { name: 'System Administration', icon: <Server className="h-10 w-10 text-accent" />, description: 'Windows Server & Linux Administration' },
 ];
 
 export default function Skills() {
