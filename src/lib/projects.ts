@@ -119,21 +119,4 @@ export const projects: Project[] = [
     github: null,
     live: null,
   },
-  {
-    slug: 'new-sample-project',
-    title: 'New Sample Project',
-    description: 'This is a placeholder for your new project. You can edit this in src/lib/projects.ts.',
-    longDescription: 'This is a longer description for your new sample project. Describe what your project does, its purpose, and the technologies you used. You can edit this text in `src/lib/projects.ts`.',
-    challenges: 'Describe the challenges you faced while building this project. What problems did you solve? Edit this in `src/lib/projects.ts`.',
-    learnings: 'What are the key things you learned from this project? Mention new skills, technologies, or concepts. Edit this in `src/lib/projects.ts`.',
-    image: 'https://picsum.photos/seed/sampleproject/600/400',
-    imageHint: 'placeholder project',
-    gallery: [
-      { url: 'https://picsum.photos/seed/samplegallery1/800/600', hint: 'gallery placeholder' },
-      { url: 'https://picsum.photos/seed/samplegallery2/800/600', hint: 'another placeholder' },
-    ],
-    tags: ['Web App'],
-    github: '#',
-    live: '#',
-  },
 ];
