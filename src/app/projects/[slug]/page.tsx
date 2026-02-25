@@ -1,8 +1,8 @@
 'use client';
 
-import { projects, Project } from '@/lib/projects';
+import { projects } from '@/lib/projects';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
@@ -13,13 +13,8 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default function ProjectPage() {
+  const params = useParams();
   const project = projects.find((p) => p.slug === params.slug);
 
   if (!project) {
