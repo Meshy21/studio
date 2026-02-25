@@ -87,13 +87,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 {project.gallery.map((item, index) => (
                   <Dialog key={index}>
                     <DialogTrigger asChild>
-                      <div className="overflow-hidden rounded-lg cursor-pointer">
+                      <div className="overflow-hidden rounded-lg cursor-pointer bg-muted/50">
                         <Image
                           src={item.url}
                           alt={`${project.title} gallery image ${index + 1}`}
                           width={800}
                           height={600}
-                          className="rounded-lg object-cover aspect-[4/3] transition-transform duration-300 hover:scale-110"
+                          className="rounded-lg object-contain aspect-[4/3] transition-transform duration-300 hover:scale-105"
                           data-ai-hint={item.hint}
                         />
                       </div>
